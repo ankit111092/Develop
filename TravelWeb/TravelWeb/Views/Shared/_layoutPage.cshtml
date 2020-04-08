@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Home Flight</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400%7COpen+Sans:300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/css/library/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/library/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/library/jquery-ui.min.css">
+    <link rel="stylesheet" href="~/css/library/owl.carousel.css">
+    <link rel="stylesheet" href="~/css/library/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="tb-cell">
+            <div id="page-loading">
+                <div></div>
+                <p>Loading</p>
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="logo float-left"><a href="index-2.html" title=""><img src="~/images/logo-header.png" alt=""></a></div>
+                <div class="bars" id="bars"></div>
+                <nav class="navigation nav-c" id="navigation" data-menu-type="1200">
+                    <div class="nav-inner">
+                        <a href="#" class="bars-close" id="bars-close">Close</a>
+                        <div class="tb">
+                            <div class="tb-cell">
+                                <ul class="menu-list text-uppercase">
+
+                                    <li>
+                                        <a asp-controller="Index" asp-action="Index">Home</a>
+                                        <!--<ul class="sub-menu">
+
+                                          <li class="current-menu-item"><a href="about.html" title="">About Us</a></li>
+
+                                          <li><a href="contact.html" title="">Contact</a></li>
+                                          <li><a href="payment.html" title="">Payment</a></li>
+                                          <li><a href="element.html" title="">Element</a></li>
+                                          <li><a href="404.html" title="">404</a></li>
+                                          <li><a href="comingsoon.html" title="">Comingsoon</a></li>
+                                        </ul>-->
+                                    </li>
+                                    <li>
+                                        <a title="" asp-controller="AboutUS" asp-action="AboutUS">About Us</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="flight-list.html" title="">Flights</a>
+
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Carrers" asp-action="Carrers" title="">Career</a>
+
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Contact" asp-action="Contact" title="">Contact Us</a>
+
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Faq" asp-action="Faq" title="">Faq</a>
+
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Login" asp-action="Login" title="">Login</a>
+
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="sub-banner">
+            <div class="bg-parallax bg-1"></div>
+            <div class="logo-banner text-center"><a href="#" title=""><img src="~/images/logo-banner.png" alt=""></a></div>
+        </section>
+        <div class="main">
+
+            <div class="container">
+                @RenderBody();
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo-foter"><a href="index-2.html" title=""><img src="~/images/logo-footer.png" alt=""></a></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="ul-ft">
+                            <ul>
+                                <li><a href="about.html" title="">About</a></li>
+                                <li><a href="blog.html" title="">Blog</a></li>
+                                <li><a href="fqa.html" title="">FQA</a></li>
+                                <li><a href="careers.html" title="">Carrers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="ul-ft">
+                            <ul>
+                                <li><a href="contact.html" title="">Contact Us</a></li>
+                                <li><a href="#" title="">Privacy Policy</a></li>
+                                <li><a href="#" title="">Term of Service</a></li>
+                                <li><a href="#" title="">Security</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="currency-lang-bottom dropdown-cn float-left">
+                            <div class="dropdown-head"><span class="angle-down"><i class="fa fa-angle-down"></i></span></div>
+                            <div class="dropdown-body">
+                                <ul>
+                                    <li class="current"><a href="#" title="">English</a></li>
+                                    <li><a href="#" title="">Bahasa Melayu</a></li>
+                                    <li><a href="#" title="">Català</a></li>
+                                    <li><a href="#" title="">Dansk</a></li>
+                                    <li><a href="#" title="">Deutsch</a></li>
+                                    <li><a href="#" title="">Francais</a></li>
+                                    <li><a href="#" title="">Italiano</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="currency-lang-bottom dropdown-cn float-left">
+                            <div class="dropdown-head"><span class="angle-down"><i class="fa fa-angle-down"></i></span></div>
+                            <div class="dropdown-body">
+                                <ul>
+                                    <li class="current"><a href="#" title="">US</a></li>
+                                    <li><a href="#" title="">ARS</a></li>
+                                    <li><a href="#" title="">ADU</a></li>
+                                    <li><a href="#" title="">CAD</a></li>
+                                    <li><a href="#" title="">CHF</a></li>
+                                    <li><a href="#" title="">CNY</a></li>
+                                    <li><a href="#" title="">CZK</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="copyright">© 2019 – 2020 FLIGHT DEAL US™ All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="~/js/library/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="~/js/library/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="~/js/library/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/js/library/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/js/library/parallax.min.js"></script>
+    <script type="text/javascript" src="~/js/library/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="~/js/library/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="~/js/library/jquery.mb.YTPlayer.min.js"></script>
+    <script type="text/javascript" src="~/js/library/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="~/js/script.js"></script>
+</body>
+
+</html>
